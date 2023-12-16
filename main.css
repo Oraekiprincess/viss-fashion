@@ -1,0 +1,107 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+:root{
+    --orange:#f9ba60;
+    --black: #1d1c1c;
+    --light-color:#666;
+}
+
+*{
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+
+html{
+  font-size: 65.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+section{
+  padding: 3rem 7%;
+}
+
+.btn{
+  font-size: 1.7rem;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: .5rem 3rem;
+  border-radius: 1.5rem;
+  border: .2rem solid var(--orange);
+  color: var(--orange);
+  background: orangered;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background: var(--orange);
+  color: var(--black);
+}
+
+.header{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  background: white;
+  box-shadow: var(--box-shadow);
+}
+
+.header .logo{
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: var(--black);
+}
+
+.header .navbar a{
+  font-size: 1.7rem;
+  margin: 0 1rem;
+  color: var(--black);
+}
+
+.header .navbar a:hover{
+  color: var(--light-color);
+}
+
+.home{
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  position: relative;
+}
+
+.home .content{
+  flex: 1 1 40rem;
+  padding-top: 6.5rem;
+}
+
+.home .content h3{
+  font-size: 20px;
+  font-weight: 1000;
+  line-height: 48px;
+  color: #44C3EBCC;
+
+}
+
+.home .content p{
+  font-size: 48px;
+  color: var(black);
+  line-height: 70px;
+  letter-spacing: 100%;
+  
+}
+
+.home .image{
+  flex: 1 1 40rem;
+}
+
+.home .image img{
+  width: 100%;
+  padding: 4rem;
+}
